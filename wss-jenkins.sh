@@ -66,9 +66,6 @@ else
                   echo ProjectToken ${projectToken}
                   echo Start Unified Agent Scan
                   java -jar $BASEDIR/wss-unified-agent.jar -c $BASEDIR/scan-wss-unified-agent.config -apiKey ${orgToken} -userKey ${userKey} -productToken ${productToken} -projectToken ${projectToken}  -d ${WORKSPACE}
-                  #Python Replace Filename
-                  echo Start Replace Filename
-                  python3 $BASEDIR/eraser.py ./whitesource/update-request.txt
                   #Upload Scan Result
                   echo Start Upload Result
                   java -jar $BASEDIR/wss-unified-agent.jar -c $BASEDIR/upload-wss-unified-agent.config -apiKey ${orgToken} -userKey ${userKey} -productToken ${productToken} -projectToken ${projectToken} -requestFiles ./EraseResult.txt > summary.txt

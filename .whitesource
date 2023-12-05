@@ -24,9 +24,8 @@
       ],
       "packageRules": [
       {
-        "matchConfidence": ["very high"],
-        "matchUpdateTypes": ["patch", "minor"],
-        "automerge": false
+        "groupName": "High Merge Confidence",
+        "matchConfidence": ["high", "very high"]
       }
     ]
   }

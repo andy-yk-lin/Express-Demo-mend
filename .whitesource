@@ -12,7 +12,7 @@
   },
   "issueSettings": {
     "minSeverityLevel": "NONE"
-  },
+  }, 
   "remediateSettings": {
     "workflowRules": {
       "enabled": false
